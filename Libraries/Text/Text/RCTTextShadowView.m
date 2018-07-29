@@ -211,6 +211,7 @@
 
   NSLayoutManager *layoutManager = [NSLayoutManager new];
   [layoutManager addTextContainer:textContainer];
+  layoutManager.usesFontLeading = NO;
 
   NSTextStorage *textStorage =
     [[NSTextStorage alloc] initWithAttributedString:[self attributedTextWithMeasuredAttachmentsThatFitSize:size]];
