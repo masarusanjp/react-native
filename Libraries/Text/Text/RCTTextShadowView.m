@@ -210,6 +210,7 @@
   textContainer.maximumNumberOfLines = _maximumNumberOfLines;
 
   NSLayoutManager *layoutManager = [NSLayoutManager new];
+  layoutManager.usesFontLeading = NO;
   [layoutManager addTextContainer:textContainer];
 
   NSTextStorage *textStorage =
